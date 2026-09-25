@@ -78,7 +78,7 @@ SEED_FRAC = 0.05  # was 0.02 -- see module docstring, that value measured
 # build_features/early_walk/pick_seeds/ppr_vector/sweep_cut/trust_scores,
 # not the private _rank/_adj helpers build_features uses internally.
 # Inlined here, verbatim, so facebook_features() below stays byte-for-byte
-# consistent with bad_people_finder/core/detector.py's own build_features().
+# consistent with sybil_shield/core/detector.py's own build_features().
 
 def _rank(x):
     return (rankdata(x) - 1) / max(len(x) - 1, 1)

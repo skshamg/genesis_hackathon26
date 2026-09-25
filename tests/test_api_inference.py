@@ -1,12 +1,7 @@
 import networkx as nx
-<<<<<<< HEAD
-
-from bad_people_finder.api.app import predict_graph
-=======
 from fastapi.testclient import TestClient
 
 from sybil_shield.api.app import app, get_model_names, predict_graph
->>>>>>> f345065 (Initial project commit)
 
 
 def test_predict_graph_returns_four_model_outputs():
@@ -23,8 +18,6 @@ def test_predict_graph_returns_four_model_outputs():
         assert isinstance(scores, list)
         assert len(scores) == len(G.nodes)
         assert all(isinstance(v, float) for v in scores)
-<<<<<<< HEAD
-=======
 
 
 def test_api_uses_real_facebook_variant_names_without_gradient_or_trusted_legacy_variant():

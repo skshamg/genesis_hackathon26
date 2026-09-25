@@ -40,7 +40,7 @@ logging.basicConfig(
 )
 logger = logging.getLogger("sybil_shield.api")
 
-app = FastAPI(title="Bad People Finder API", version="1.0.0")
+app = FastAPI(title="SYBIL-SHIELD API", version="1.0.0")
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
@@ -437,4 +437,4 @@ def facebook_test_api(payload: Optional[Dict[str, Any]] = None) -> Dict[str, Any
 @app.get("/")
 @app.get("/api")
 def root() -> Dict[str, str]:
-    return {"message": "Bad People Finder API is running."}
+    return {"message": "SYBIL-SHIELD API is running."}
