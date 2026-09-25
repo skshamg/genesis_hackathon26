@@ -1,0 +1,7 @@
+numpy
+networkx
+scipy
+scikit-learn
+matplotlib
+fastapi
+uvicorn

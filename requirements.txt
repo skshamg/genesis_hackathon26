@@ -1,6 +1,16 @@
+<<<<<<< HEAD
 fastapi>=0.111.0
 uvicorn>=0.30.0
 networkx>=3.2.1
 numpy>=1.26.0
 scipy>=1.11.0
 scikit-learn>=1.4.0
+=======
+numpy
+networkx
+scipy
+scikit-learn
+matplotlib
+fastapi
+uvicorn
+>>>>>>> f345065 (Initial project commit)

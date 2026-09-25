@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # genesis-hackathon26
 
 # SYBIL — Topological Trust Engine
@@ -524,3 +525,72 @@ By focusing on topology, trust propagation, and adversarial robustness, the proj
 Attack the detector.
 Defend against the attack.
 Explain the evidence.**
+=======
+# SYBIL-SHIELD
+
+Synthetic-to-real Sybil detection using trust propagation, structural graph features, GCNs, attack augmentation, and gradient-adversarial training.
+
+## Project layout
+
+```text
+SYBIL-SHIELD/
+├── src/sybil_shield/
+│   ├── core/          # detector, graph features, GCN, attacks
+│   ├── experiments/   # training/evaluation scripts
+│   └── api/           # FastAPI inference service
+├── scripts/           # the few commands you actually run
+├── tests/             # API tests
+├── data/              # put datasets here (not bundled)
+├── results/           # generated outputs
+└── docs/              # report/demo notes
+```
+
+## Setup
+
+```bash
+pip install -r requirements.txt
+pip install -e .
+```
+
+## What to run
+
+### 1. Main demo / presentation
+Start the API:
+
+```bash
+python scripts/run_api.py
+```
+
+Then use the frontend/demo client you are presenting to POST a graph to `/predict`. The API accepts nodes, edges, and optional labels. Labels should not be supplied for a zero-shot target-graph demo.
+
+### 2. Main evaluation video
+Run the synthetic-to-real Facebook transfer experiment:
+
+```bash
+python scripts/run_facebook_eval.py
+```
+
+This is the research/demo command to show the trained variants, validation diagnostic, Facebook transfer AUC/accuracy, and ensemble result. It expects the Facebook dataset paths configured in `src/sybil_shield/experiments/real_facebook_eval.py`.
+
+### 3. Synthetic training / methodology demo
+```bash
+python scripts/run_training.py
+```
+
+### 4. Visuals
+```bash
+python scripts/run_visualization.py
+```
+
+## Suggested 48-hour hackathon demo flow
+
+1. **Live graph input:** show a small graph and the SYBIL-SHIELD prediction output.
+2. **Explain the idea:** only a small trusted benign seed set is needed on the target graph; no target Sybil labels are required for feature construction.
+3. **Show synthetic attacker training:** standard, random-augmented, mixed-augmented, and gradient-adversarial variants.
+4. **Show transfer:** run or display the Facebook transfer result and AUC/accuracy.
+5. **Show structure:** briefly highlight trust propagation + structural/camouflage features + GCN.
+
+## Important
+
+Datasets are intentionally not included in the source archive. Put them under `data/` or update the dataset paths in the relevant experiment configuration. Generated caches, `__pycache__`, and old experimental clutter are excluded.
+>>>>>>> f345065 (Initial project commit)
