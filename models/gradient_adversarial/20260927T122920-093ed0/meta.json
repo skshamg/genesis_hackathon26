@@ -1,0 +1,63 @@
+{
+  "model_id": "20260927T122920-093ed0",
+  "model_type": "gradient_adversarial",
+  "trained_at": "2026-09-27T12:29:20Z",
+  "architecture": {
+    "n_features": 12,
+    "hidden_dims": [
+      4,
+      4
+    ],
+    "n_classes": 2,
+    "l2": 0.0001
+  },
+  "params": {
+    "training_mode": "transfer",
+    "num_graphs": 2,
+    "min_nodes": 80,
+    "max_nodes": 120,
+    "sybil_fraction_min": 0.1,
+    "sybil_fraction_max": 0.35,
+    "epochs": 1,
+    "learning_rate": 0.01,
+    "attack_every": 1,
+    "attack_budget": 5,
+    "recompute_every": 1,
+    "hidden_dims": [
+      4,
+      4
+    ],
+    "betweenness_k": 30,
+    "seed_frac": 0.05,
+    "seed": 7,
+    "bootstrap_seed_prob": 0.5,
+    "attack_mode_weights": [
+      0.5,
+      0.25,
+      0.25
+    ]
+  },
+  "metrics": {
+    "auc": 0.5,
+    "accuracy": 0.8722627737226277,
+    "precision": 0.0,
+    "recall": 0.0,
+    "confusion_matrix": {
+      "true_positive": 0,
+      "false_positive": 0,
+      "true_negative": 239,
+      "false_negative": 35
+    },
+    "roc_curve": [
+      {
+        "fpr": 0.0,
+        "tpr": 0.0
+      },
+      {
+        "fpr": 1.0,
+        "tpr": 1.0
+      }
+    ],
+    "train_seconds": 0.6
+  }
+}

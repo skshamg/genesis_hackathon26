@@ -1,0 +1,42 @@
+{
+  "model_id": "20260928T155036-a7f370",
+  "model_type": "learned_gcn",
+  "trained_at": "2026-09-28T15:50:36Z",
+  "architecture": {
+    "kind": "learned_topology_gcn",
+    "n_features": 3,
+    "input_columns": [
+      "seed_mask",
+      "log_degree",
+      "const"
+    ],
+    "hidden_dims": [
+      8,
+      8
+    ],
+    "n_classes": 2,
+    "l2": 0.0001,
+    "readout": "jumping_knowledge_concat",
+    "feature_source": "learned"
+  },
+  "params": {
+    "num_graphs": 2,
+    "min_nodes": 80,
+    "max_nodes": 120,
+    "sybil_fraction_min": 0.1,
+    "sybil_fraction_max": 0.35,
+    "epochs": 1,
+    "learning_rate": 0.01,
+    "hidden_dim": 8,
+    "n_prop_layers": 2,
+    "seed": 7,
+    "feature_source": "learned"
+  },
+  "metrics": {
+    "train_loss": 0.6705839949916511,
+    "epochs": 1,
+    "hidden_dim": 8,
+    "n_prop_layers": 2
+  },
+  "training_graphs": []
+}

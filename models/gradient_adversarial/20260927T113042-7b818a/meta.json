@@ -1,0 +1,128 @@
+{
+  "model_id": "20260927T113042-7b818a",
+  "model_type": "gradient_adversarial",
+  "trained_at": "2026-09-27T11:30:42Z",
+  "architecture": {
+    "n_features": 12,
+    "hidden_dims": [
+      16,
+      16
+    ],
+    "n_classes": 2,
+    "l2": 0.0001
+  },
+  "params": {
+    "num_graphs": 1,
+    "min_nodes": 100,
+    "max_nodes": 100,
+    "sybil_fraction_min": 0.05,
+    "sybil_fraction_max": 0.3,
+    "epochs": 1,
+    "learning_rate": 0.02,
+    "attack_every": 2,
+    "attack_budget": 8,
+    "recompute_every": 3,
+    "hidden_dims": [
+      16,
+      16
+    ],
+    "betweenness_k": 30,
+    "seed_frac": 0.05,
+    "seed": 1
+  },
+  "metrics": {
+    "auc": 0.9458502024291497,
+    "accuracy": 0.8853046594982079,
+    "precision": 0.0,
+    "recall": 0.0,
+    "confusion_matrix": {
+      "true_positive": 0,
+      "false_positive": 0,
+      "true_negative": 247,
+      "false_negative": 32
+    },
+    "roc_curve": [
+      {
+        "fpr": 0.0,
+        "tpr": 0.0
+      },
+      {
+        "fpr": 0.0,
+        "tpr": 0.03125
+      },
+      {
+        "fpr": 0.0,
+        "tpr": 0.21875
+      },
+      {
+        "fpr": 0.0,
+        "tpr": 0.28125
+      },
+      {
+        "fpr": 0.0,
+        "tpr": 0.375
+      },
+      {
+        "fpr": 0.0,
+        "tpr": 0.5
+      },
+      {
+        "fpr": 0.0,
+        "tpr": 0.71875
+      },
+      {
+        "fpr": 0.008097165991902834,
+        "tpr": 0.71875
+      },
+      {
+        "fpr": 0.008097165991902834,
+        "tpr": 0.75
+      },
+      {
+        "fpr": 0.012145748987854251,
+        "tpr": 0.75
+      },
+      {
+        "fpr": 0.012145748987854251,
+        "tpr": 0.84375
+      },
+      {
+        "fpr": 0.016194331983805668,
+        "tpr": 0.84375
+      },
+      {
+        "fpr": 0.016194331983805668,
+        "tpr": 0.875
+      },
+      {
+        "fpr": 0.020242914979757085,
+        "tpr": 0.875
+      },
+      {
+        "fpr": 0.020242914979757085,
+        "tpr": 0.90625
+      },
+      {
+        "fpr": 0.5141700404858299,
+        "tpr": 0.90625
+      },
+      {
+        "fpr": 0.5141700404858299,
+        "tpr": 0.96875
+      },
+      {
+        "fpr": 0.6234817813765182,
+        "tpr": 0.96875
+      },
+      {
+        "fpr": 0.6234817813765182,
+        "tpr": 1.0
+      },
+      {
+        "fpr": 1.0,
+        "tpr": 1.0
+      }
+    ],
+    "train_seconds": 4.2
+  }
+}
